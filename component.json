@@ -1,0 +1,16 @@
+{
+  "name": "dombo-plugin",
+  "repo": "dombojs/dombo-plugin",
+  "description": "plugin factory for dombo",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "dombojs/dombo": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
