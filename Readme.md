@@ -25,7 +25,7 @@
   $('ul').thing({active:1});
 ```
 
-### plugin.id(el)
+### ui.id(el)
 
   Returns ID for DOM element, creating if necessary
 
