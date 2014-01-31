@@ -1,5 +1,5 @@
 
-# dombo-plugin
+# dombo-ui
 
   plugin factory for dombo
 
@@ -7,7 +7,7 @@
 
   Install with [component(1)](http://component.io):
 
-    $ component install dombojs/dombo-plugin
+    $ component install dombojs/dombo-ui
 
 ## API
 
@@ -16,9 +16,12 @@
   Create plugin with `name` and default options
 
 ```
-  plugin('thing', {active: 0}, function($, el, o) {
+  var ui = require('dombo-ui');
+
+  ui('thing', {active: 0}, function($, el, o) {
     console.log($, el, o.active);
   });
+
   $('ul').thing({active:1});
 ```
 
@@ -27,7 +30,7 @@
   Returns ID for DOM element, creating if necessary
 
 ```js
-plugin.id(node);
+ui.id(node);
 ```
 
 ## License
