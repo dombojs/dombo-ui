@@ -1,6 +1,6 @@
 {
-  "name": "dombo-ui",
-  "repo": "dombojs/dombo-ui",
+  "name": "ui",
+  "repo": "dombojs/ui",
   "description": "plugin factory for dombo",
   "version": "0.0.1",
   "keywords": [],
