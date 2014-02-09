@@ -15,21 +15,16 @@ function factory(name, defaults, init) {
         if (init) {
 
             var el = this,
-                initClass = 'js-init-' + name,
-                event = 'init' + '.' + name;
+                initClass = 'js-init-' + name;
 
             if (options || defaults) {
                 options = $.extend(true, defaults, options);
             }
 
-            el.on(event, function(e) {
-                if (!el.hasClass(initClass)) {
-                    init.call(el[0], $, el, options);
-                    el.addClass(initClass);
-                }
-            });
-
-            el.trigger(event);
+            if (!el.hasClass(initClass)) {
+                init.call(el[0], $, el, options);
+                el.addClass(initClass);
+            }
 
         }
 
